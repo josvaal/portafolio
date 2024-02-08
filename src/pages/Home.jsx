@@ -1,9 +1,9 @@
 import Button from "../components/Button"
-import { FaReact } from "react-icons/fa";
+import { FaFreeCodeCamp, FaReact, FaUniversity, FaYoutube } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { RiSupabaseFill } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
+import { SiNotion } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
+import { TbWorldWww } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -13,12 +13,20 @@ const Home = () => {
       <br />
       <p>Mis principales herramientas:</p>
       <br />
-      <div className="flex gap-4">
-        <Button text="React" icon={<FaReact />} />
-        <Button text="Firebase" icon={<IoLogoFirebase />} />
-        <Button text="Supabase" icon={<RiSupabaseFill />} />
-        <Button text="Node.js" icon={<FaNodeJs />} />
-        <Button text="Git" icon={<FaGitAlt />} />
+      <div className="grid gap-4 grid-cols-4">
+        <Button text="React" icon={<FaReact />} url="https://react.dev/" />
+        <Button text="Firebase" icon={<IoLogoFirebase />} url="https://firebase.google.com/?hl=es" />
+        <Button text="Git" icon={<FaGitAlt />} url="https://git-scm.com/" />
+        <Button text="Notion" icon={<SiNotion />} url="https://www.notion.so/" />
+      </div>
+      <br />
+      <p>Mis estudios:</p>
+      <br />
+      <div className="grid gap-4 grid-cols-2">
+        <Button text="UNAMAD" icon={<FaUniversity />} url="https://portal.unamad.edu.pe/" />
+        <Button text="FreeCodeCamp" icon={<FaFreeCodeCamp />} url="https://www.freecodecamp.org/" />
+        <Button text="Open Bootcamp" icon={<TbWorldWww />} url="https://open-bootcamp.com/" />
+        <Button text="Cursos de Youtube" icon={<FaYoutube />} />
       </div>
     </div>
   )
