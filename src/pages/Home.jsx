@@ -13,7 +13,7 @@ const Home = () => {
       <br />
       <p>Mis principales herramientas:</p>
       <br />
-      <div className="grid gap-4 grid-cols-4">
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
         <Button text="React" icon={<FaReact />} url="https://react.dev/" />
         <Button text="Firebase" icon={<IoLogoFirebase />} url="https://firebase.google.com/?hl=es" />
         <Button text="Git" icon={<FaGitAlt />} url="https://git-scm.com/" />
@@ -22,7 +22,7 @@ const Home = () => {
       <br />
       <p>Mis estudios:</p>
       <br />
-      <div className="grid gap-4 grid-cols-2">
+      <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
         <Button text="UNAMAD" icon={<FaUniversity />} url="https://portal.unamad.edu.pe/" />
         <Button text="FreeCodeCamp" icon={<FaFreeCodeCamp />} url="https://www.freecodecamp.org/" />
         <Button text="Open Bootcamp" icon={<TbWorldWww />} url="https://open-bootcamp.com/" />

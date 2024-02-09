@@ -6,14 +6,14 @@ import { Route, Switch } from "wouter";
 
 const App = () => {
   return (
-    <>
+    <div className="max-w-[45rem] m-auto px-6">
       <Navbar />
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/projects" component={Projects} />
       </Switch>
       <Footer />
-    </>
+    </div>
   )
 }
 

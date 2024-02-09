@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <div className="pb-20">
-      <ul className="flex gap-6">
+      <ul className="flex gap-4 md:gap-6 text-sm md:text-base">
         <li>
           <Link href="/" className={`duration-300 flex gap-2 items-center justify-center ${location == "/" ? "opacity-100 font-bold text-red-400" : "opacity-50 hover:text-red-400"}`}>
             <FaHome />
