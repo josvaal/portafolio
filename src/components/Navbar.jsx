@@ -1,10 +1,30 @@
+import { FaBriefcase, FaCode, FaHome } from "react-icons/fa";
+import { Link, useLocation } from "wouter";
+
 const Navbar = () => {
+  const [location] = useLocation();
+
   return (
     <div className="pb-20">
-      <ul className="flex gap-5">
-        <li><a href="#" className="hover:text-red-400 duration-300">inicio</a></li>
-        <li><a href="#" className="hover:text-red-400 duration-300">proyectos</a></li>
-        <li><a href="#" className="hover:text-red-400 duration-300">social</a></li>
+      <ul className="flex gap-6">
+        <li>
+          <Link href="/" className={`duration-300 flex gap-2 items-center justify-center ${location == "/" ? "opacity-100 font-bold text-red-400" : "opacity-50 hover:text-red-400"}`}>
+            <FaHome />
+            <p>inicio</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/projects" className={`duration-300 flex gap-2 items-center justify-center ${location == "/projects" ? "opacity-100 font-bold text-red-400" : "opacity-50 hover:text-red-400"}`}>
+            <FaCode />
+            <p>proyectos</p>
+          </Link>
+        </li>
+        <li>
+          <Link href="/experience" className={`duration-300 flex gap-2 items-center justify-center ${location == "/experience" ? "opacity-100 font-bold text-red-400" : "opacity-50 hover:text-red-400"}`}>
+            <FaBriefcase />
+            <p>experiencia</p>
+          </Link>
+        </li>
       </ul>
     </div>
   )

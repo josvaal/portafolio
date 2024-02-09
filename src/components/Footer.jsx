@@ -1,5 +1,5 @@
 import { IoMdMail } from "react-icons/io";
-import { FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import { Toaster, toast } from 'sonner'
 
 function Footer() {
@@ -15,6 +15,9 @@ function Footer() {
         </a>
         <a href="https://www.linkedin.com/in/josval/" className='hover:text-red-400 transition-all' target="_blank" rel="noreferrer">
           <FaLinkedin size={30} />
+        </a>
+        <a href="https://github.com/heyy-josval/" className='hover:text-red-400 transition-all' target="_blank" rel="noreferrer">
+          <FaGithub size={30} />
         </a>
       </div>
       <div className="flex justify-center text-sm mt-2 opacity-50 hover:text-red-400 transition-all hover:cursor-pointer" onClick={() => {
