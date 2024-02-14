@@ -1,42 +1,35 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.loadership_TOFEP {
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 8px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.loadership_TOFEP div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 8px;
+  border-radius: 4px;
+  background: #ffffff;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.loadership_TOFEP div:nth-child(1) {
+  width: 90px;
+  opacity: 0.3;
+}
+
+.loadership_TOFEP div:nth-child(2) {
+  width: 40px;
+  animation: loadership_TOFEP_move alternate 1s infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@keyframes loadership_TOFEP_move {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateX(50px);
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
