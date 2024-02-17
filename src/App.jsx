@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
 import { Route, Switch } from "wouter";
+import Experiences from "./pages/Experiences";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/projects" component={Projects} />
+        <Route path="/experience" component={Experiences} />
       </Switch>
       <Footer />
     </div>

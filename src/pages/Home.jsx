@@ -16,11 +16,14 @@ const Home = () => {
       <h1 className="font-bold text-3xl pb-4 text-balance">
         Hola, soy Josval 👋
       </h1>
-      <p>
-        Apasionado desarrollador autodidacta con una fascinación temprana por la
-        tecnología. Especializado en soluciones integrales y creativas. Fuerte
-        dedicación a la excelencia en desarrollo web. Constante aprendiz y
-        apasionado por desafíos tecnológicos.
+      <p className="text-pretty text-lg">
+        +3 años de experiencia.{" "}
+        <span className="font-bold text-red-200">
+          Desarrollador de software
+        </span>{" "}
+        de Madre de Dios, Perú 🇵🇪. Comprometido con la creación de soluciones
+        innovadoras y la resolución efectiva de desafíos en el ámbito del
+        desarrollo de software.
       </p>
       <br />
       <p>Mis principales herramientas:</p>
