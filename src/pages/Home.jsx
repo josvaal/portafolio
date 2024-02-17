@@ -6,14 +6,16 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiNotion } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
 import { FaGitAlt } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
 const Home = () => {
   return (
     <div>
-      <h1 className="font-bold text-xl pb-4">Hola, soy josval 👋</h1>
+      <h1 className="font-bold text-3xl pb-4 text-balance">
+        Hola, soy Josval 👋
+      </h1>
       <p>
         Apasionado desarrollador autodidacta con una fascinación temprana por la
         tecnología. Especializado en soluciones integrales y creativas. Fuerte
@@ -26,16 +28,16 @@ const Home = () => {
       <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
         <Button text="React" icon={<FaReact />} url="https://react.dev/" />
         <Button
+          text="JavaScript"
+          icon={<IoLogoJavascript />}
+          url="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+        />
+        <Button
           text="Firebase"
           icon={<IoLogoFirebase />}
           url="https://firebase.google.com/?hl=es"
         />
         <Button text="Git" icon={<FaGitAlt />} url="https://git-scm.com/" />
-        <Button
-          text="Notion"
-          icon={<SiNotion />}
-          url="https://www.notion.so/"
-        />
       </div>
       <br />
       <p>Mis estudios:</p>
