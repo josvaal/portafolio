@@ -47,6 +47,25 @@ function Footer() {
       >
         josval15@icloud.com
       </div>
+      <div className="flex justify-between opacity-20 mt-10">
+        <p>
+          © {new Date().getFullYear()} Josval. Casi todos los derechos
+          reservados
+        </p>
+        <div className="flex gap-5">
+          <a
+            className="hover:underline"
+            href="https://josval.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Sobre mí
+          </a>
+          <a className="hover:underline" href="mailto:josval15@icloud.com">
+            Contacto
+          </a>
+        </div>
+      </div>
     </div>
   );
 }
