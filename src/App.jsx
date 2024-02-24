@@ -8,6 +8,7 @@ import Experiences from "./pages/Experiences";
 import { Router } from "wouter";
 import { useLocation } from "wouter";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 const App = () => {
   const [location, setLocation] = useLocation();
@@ -38,6 +39,7 @@ const App = () => {
           </Switch>
         </Router>
         <Analytics />
+        <SpeedInsights />
       </main>
       <Footer />
     </div>
