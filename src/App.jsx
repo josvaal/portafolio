@@ -17,7 +17,7 @@ const App = () => {
         <Navbar />
       </nav>
       <main>
-        <Router base="josval.vercel.app/">
+        <Router base="">
           <Switch>
             <Route path="/" component={Home} />
             <Route path="/projects" component={Projects} />
