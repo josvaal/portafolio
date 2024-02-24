@@ -23,13 +23,7 @@ const Project = ({ title, img, badges, description, code, preview }) => {
         </div>
         <p className="pb-4">{description}</p>
         <div className="flex gap-4">
-          {code ? (
-            <Button
-              icon={<FaGithub />}
-              text="Code"
-              url="https://github.com/heyy-josval/booking-mern"
-            />
-          ) : null}
+          {code ? <Button icon={<FaGithub />} text="Code" url={code} /> : null}
           {preview ? (
             <Button icon={<FaLink />} text="Preview" url={preview} />
           ) : null}
