@@ -7,6 +7,8 @@ import { Route, Switch } from "wouter";
 import Experiences from "./pages/Experiences";
 import { Router } from "wouter";
 import { useLocation } from "wouter";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const App = () => {
   const [location, setLocation] = useLocation();
@@ -38,6 +40,8 @@ const App = () => {
         </Router>
       </main>
       <Footer />
+      <Analytics />
+      <SpeedInsights />
     </div>
   );
 };
