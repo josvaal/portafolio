@@ -1,5 +1,5 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Footer from "./components/Footer";
@@ -15,21 +15,27 @@ const App = () => {
   console.log(location);
   return (
     <div className="max-w-[45rem] m-auto px-6">
-      <nav>
+      {/* <nav>
         <Navbar />
-      </nav>
+      </nav> */}
       <main>
+        <br /><br />
+        <Home />
+        <br /><br />
+        <Projects />
+        <br /><br />
+        <Experiences />
         <Router base="">
           <Switch>
-            <Route path="/" component={Home} />
+            {/* <Route path="/" component={Home} />
             <Route path="/projects" component={Projects} />
-            <Route path="/experience" component={Experiences} />
-            <Route>
+            <Route path="/experience" component={Experiences} /> */}
+            {/* <Route>
               {() => {
                 console.log(location);
                 setLocation("/");
               }}
-            </Route>
+            </Route> */}
             <Route path="*">
               {() => {
                 console.log(location);

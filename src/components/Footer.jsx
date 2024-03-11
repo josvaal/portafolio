@@ -8,7 +8,7 @@ function Footer() {
       <Toaster richColors />
       <div className="flex gap-4 justify-center mt-10">
         <a
-          href="mailto:josval15@icloud.com"
+          href="mailto:josvalmtrz@gmail.com"
           className="hover:text-red-400 transition-all"
         >
           <IoMdMail size={30} />
@@ -41,11 +41,11 @@ function Footer() {
       <div
         className="flex justify-center text-sm mt-2 opacity-50 hover:text-red-400 transition-all hover:cursor-pointer"
         onClick={() => {
-          navigator.clipboard.writeText("josval15@icloud.com");
+          navigator.clipboard.writeText("josvalmtrz@gmail.com");
           toast.success("Correo copiado!");
         }}
       >
-        josval15@icloud.com
+        josvalmtrz@gmail.com
       </div>
       <div className="flex justify-between opacity-20 mt-10">
         <p>
@@ -53,15 +53,15 @@ function Footer() {
           reservados
         </p>
         <div className="flex gap-5">
-          <a
+          {/* <a
             className="hover:underline"
             href="https://josval.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
             Sobre mí
-          </a>
-          <a className="hover:underline" href="mailto:josval15@icloud.com">
+          </a> */}
+          <a className="hover:underline" href="mailto:josvalmtrz@gmail.com">
             Contacto
           </a>
         </div>

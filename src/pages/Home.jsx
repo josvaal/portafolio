@@ -1,14 +1,14 @@
 import Button from "../components/Button";
 import {
-  FaFreeCodeCamp,
+  // FaFreeCodeCamp,
   FaReact,
-  FaUniversity,
-  FaYoutube,
+  // FaUniversity,
+  // FaYoutube,
 } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaGitAlt } from "react-icons/fa";
-import { TbWorldWww } from "react-icons/tb";
+import { FaGolang } from "react-icons/fa6";
+import { SiSvelte } from "react-icons/si";
+import { GrMysql } from "react-icons/gr";
+// import { TbWorldWww } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -19,11 +19,9 @@ const Home = () => {
       <p className="text-pretty text-lg">
         +3 años de experiencia.{" "}
         <span className="font-bold text-red-200">
-          Desarrollador de software
+          Desarrollador de software y Creador de Contenido sobre Programación
         </span>{" "}
-        de Madre de Dios, Perú 🇵🇪. Comprometido con la creación de soluciones
-        innovadoras y la resolución efectiva de desafíos en el ámbito del
-        desarrollo de software.
+        de Madre de Dios, Perú 🇵🇪. Especializado en aprender y mejorar de manera autodidacta mis aptitudes.
       </p>
       <br />
       <p>Mis principales herramientas:</p>
@@ -31,18 +29,14 @@ const Home = () => {
       <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
         <Button text="React" icon={<FaReact />} url="https://react.dev/" />
         <Button
-          text="JavaScript"
-          icon={<IoLogoJavascript />}
-          url="https://developer.mozilla.org/es/docs/Web/JavaScript/"
+          text="SvelteKit"
+          icon={<SiSvelte />}
+          url="https://kit.svelte.dev/"
         />
-        <Button
-          text="Firebase"
-          icon={<IoLogoFirebase />}
-          url="https://firebase.google.com/?hl=es"
-        />
-        <Button text="Git" icon={<FaGitAlt />} url="https://git-scm.com/" />
+        <Button text="Go" icon={<FaGolang />} url="https://go.dev/" />
+        <Button text="MySQL" icon={<GrMysql />} url="https://www.mysql.com/" />
       </div>
-      <br />
+      {/* <br />
       <p>Mis estudios:</p>
       <br />
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
@@ -62,7 +56,7 @@ const Home = () => {
           url="https://open-bootcamp.com/"
         />
         <Button text="Cursos de Youtube" icon={<FaYoutube />} />
-      </div>
+      </div> */}
     </div>
   );
 };
