@@ -1,13 +1,12 @@
-import Button from "../components/Button";
+import { IoLogoCss3, IoLogoFirebase, IoLogoHtml5, IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
 import {
-  // FaFreeCodeCamp,
+  FaLinux,
   FaReact,
-  // FaUniversity,
-  // FaYoutube,
 } from "react-icons/fa";
 import { FaGolang } from "react-icons/fa6";
-import { SiSvelte } from "react-icons/si";
+import { SiPostman, SiSvelte, SiTailwindcss } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
+import IconTech from "../components/IconTech";
 // import { TbWorldWww } from "react-icons/tb";
 
 const Home = () => {
@@ -24,17 +23,20 @@ const Home = () => {
         de Madre de Dios, Perú 🇵🇪. Especializado en aprender y mejorar de manera autodidacta mis aptitudes.
       </p>
       <br />
-      <p>Mis principales herramientas:</p>
-      <br />
-      <div className="grid gap-4 grid-cols-2 md:grid-cols-4">
-        <Button text="React" icon={<FaReact />} url="https://react.dev/" />
-        <Button
-          text="SvelteKit"
-          icon={<SiSvelte />}
-          url="https://kit.svelte.dev/"
-        />
-        <Button text="Go" icon={<FaGolang />} url="https://go.dev/" />
-        <Button text="MySQL" icon={<GrMysql />} url="https://www.mysql.com/" />
+      <div className="grid gap-4 grid-cols-2 md:grid-cols-12">
+        <IconTech icon={<FaReact />} text="React" />
+        <IconTech icon={<SiSvelte />} text="SvelteKit" />
+        <IconTech icon={<IoLogoNodejs />} text="NodeJS" />
+        <IconTech icon={<IoLogoJavascript />} text="JavaScript" />
+        <IconTech icon={<FaGolang />} text="Go" />
+        <IconTech icon={<IoLogoFirebase />} text="Firebase" />
+        <IconTech icon={<GrMysql />} text="MySQL" />
+        <IconTech icon={<IoLogoHtml5 />} text="HTML" />
+        <IconTech icon={<IoLogoCss3 />} text="CSS" />
+        <IconTech icon={<SiTailwindcss />} text="TailwindCSS" />
+        <IconTech icon={<FaLinux />} text="Linux" />
+        <IconTech icon={<SiPostman />} text="Postman" />
+        {/* <Button text="MySQL" icon={<GrMysql />} url="https://www.mysql.com/" /> */}
       </div>
       {/* <br />
       <p>Mis estudios:</p>

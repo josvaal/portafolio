@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
 .bg-custom-gradient {
   background-color: hsla(0, 13%, 11%, 1);
   background-image: radial-gradient(
