@@ -14,7 +14,7 @@ const App = () => {
   const [location, setLocation] = useLocation();
   console.log(location);
   return (
-    <div className="max-w-[45rem] m-auto px-6">
+    <div className="max-w-[45rem] m-auto px-6 bg-animated">
       {/* <nav>
         <Navbar />
       </nav> */}
