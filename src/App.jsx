@@ -48,6 +48,8 @@ const App = () => {
         <SpeedInsights />
       </main>
       <Footer />
+
+      <br /><br />
     </div>
   );
 };

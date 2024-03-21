@@ -23,7 +23,7 @@ const Home = () => {
         de Madre de Dios, Perú 🇵🇪. Especializado en aprender y mejorar de manera autodidacta mis aptitudes.
       </p>
       <br />
-      <div className="grid gap-4 grid-cols-2 md:grid-cols-12">
+      <div className="grid gap-4 grid-cols-6 md:grid-cols-12">
         <IconTech icon={<FaReact />} text="React" />
         <IconTech icon={<SiSvelte />} text="SvelteKit" />
         <IconTech icon={<IoLogoNodejs />} text="NodeJS" />

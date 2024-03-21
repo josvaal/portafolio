@@ -47,12 +47,12 @@ function Footer() {
       >
         josvalmtrz@gmail.com
       </div>
-      <div className="flex justify-between opacity-20 mt-10">
-        <p>
+      <div className="grid grid-cols-1 gap-3 md:gap-0 md:flex md:justify-between opacity-20 mt-10">
+        <p className="flex justify-center">
           © {new Date().getFullYear()} Josval. Casi todos los derechos
           reservados
         </p>
-        <div className="flex gap-5">
+        <div className="flex gap-5 justify-center">
           {/* <a
             className="hover:underline"
             href="https://josval.vercel.app/"
