@@ -29,7 +29,7 @@ const Home = () => {
         Hola, soy Josval 👋
       </h1>
       <p className="text-pretty text-lg">
-        +3 años de experiencia.{" "}
+        +2 años de experiencia.{" "}
         <span className="font-bold text-red-200">
           Desarrollador Full Stack{" "}
         </span>

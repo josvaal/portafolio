@@ -20,6 +20,17 @@ const Experiences = () => {
             "Participé en la planificación de mejoras y en reuniones para coordinar requisitos y funcionalidades.",
           ]}
         />
+        <Experience
+          job="Desarrollador Frontend"
+          company="Universidad Nacional Amazónica de Madre de Dios"
+          company_link="https://www.gob.pe/unamad"
+          date="10/2023 - 11/2023"
+          descriptions={[
+            "Diseñé y desarrollé la página de presentación para el Congreso Nacional de Ciencias de la Computación y Tecnologías en la Amazonía (CONCETTA).",
+            "Implementé una interfaz responsive, asegurando la compatibilidad con múltiples dispositivos",
+            "Incluí secciones detalladas para la presentación del evento, temario con ponentes y talleres, cronograma y patrocinadores.",
+          ]}
+        />
       </div>
     </div>
   );
