@@ -1,41 +1,70 @@
-import { IoLogoCss3, IoLogoFirebase, IoLogoHtml5, IoLogoJavascript, IoLogoNodejs } from "react-icons/io5";
+import { FaLinux, FaReact } from "react-icons/fa";
 import {
-  FaLinux,
-  FaReact,
-} from "react-icons/fa";
-import { FaGolang } from "react-icons/fa6";
-import { SiPostman, SiSvelte, SiTailwindcss } from "react-icons/si";
+  FaAws,
+  FaBootstrap,
+  FaGolang,
+  FaJava,
+  FaNodeJs,
+} from "react-icons/fa6";
+import {
+  SiArduino,
+  SiDart,
+  SiFirebase,
+  SiMongodb,
+  SiSpring,
+  SiSqlite,
+  SiTailwindcss,
+} from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import IconTech from "../components/IconTech";
+import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
+import { TbBrandCpp, TbBrandSvelte, TbSql } from "react-icons/tb";
+import { RiFlutterFill } from "react-icons/ri";
 // import { TbWorldWww } from "react-icons/tb";
 
 const Home = () => {
   return (
-    <div>
-      <h1 className="font-bold text-3xl pb-4 text-balance">
+    <div className="text-justify">
+      <h1 className="font-bold text-3xl pb-4 text-balance ">
         Hola, soy Josval 👋
       </h1>
       <p className="text-pretty text-lg">
         +3 años de experiencia.{" "}
         <span className="font-bold text-red-200">
-          Desarrollador de software y Creador de Contenido sobre Programación
-        </span>{" "}
-        de Madre de Dios, Perú 🇵🇪. Especializado en aprender y mejorar de manera autodidacta mis aptitudes.
+          Desarrollador Full Stack{" "}
+        </span>
+        de Madre de Dios, Perú 🇵🇪. Apasionado por la tecnología y el Open
+        Source. Me enfoco en crear soluciones eficientes y prácticas, con un
+        interés particular en optimizar procesos y mejorar la experiencia del
+        usuario. Mi lema,{" "}
+        <span className="font-bold text-red-200">
+          "Talk is cheap. Show me the code"{" "}
+        </span>
+        de Linus Torvalds, refleja mi dedicación a la calidad del código y a
+        resultados tangibles
       </p>
       <br />
       <div className="grid gap-4 grid-cols-6 md:grid-cols-12">
-        <IconTech icon={<FaReact />} text="React" />
-        <IconTech icon={<SiSvelte />} text="SvelteKit" />
-        <IconTech icon={<IoLogoNodejs />} text="NodeJS" />
-        <IconTech icon={<IoLogoJavascript />} text="JavaScript" />
+        <IconTech icon={<BiLogoJavascript />} text="JavaScript" />
+        <IconTech icon={<BiLogoTypescript />} text="TypeScript" />
+        <IconTech icon={<SiDart />} text="Dart" />
         <IconTech icon={<FaGolang />} text="Go" />
-        <IconTech icon={<IoLogoFirebase />} text="Firebase" />
-        <IconTech icon={<GrMysql />} text="MySQL" />
-        <IconTech icon={<IoLogoHtml5 />} text="HTML" />
-        <IconTech icon={<IoLogoCss3 />} text="CSS" />
+        <IconTech icon={<FaJava />} text="Java" />
+        <IconTech icon={<TbBrandCpp />} text="C++" />
+        <IconTech icon={<TbSql />} text="SQL" />
+        <IconTech icon={<TbBrandSvelte />} text="SvelteKit" />
+        <IconTech icon={<FaReact />} text="React" />
+        <IconTech icon={<RiFlutterFill />} text="Flutter" />
         <IconTech icon={<SiTailwindcss />} text="TailwindCSS" />
-        <IconTech icon={<FaLinux />} text="Linux" />
-        <IconTech icon={<SiPostman />} text="Postman" />
+        <IconTech icon={<FaBootstrap />} text="Bootstrap" />
+        <IconTech icon={<FaNodeJs />} text="NodeJS" />
+        <IconTech icon={<SiSpring />} text="Spring" />
+        <IconTech icon={<GrMysql />} text="MySQL" />
+        <IconTech icon={<SiSqlite />} text="SQLite" />
+        <IconTech icon={<SiMongodb />} text="MongoDB" />
+        <IconTech icon={<SiFirebase />} text="Firebase" />
+        <IconTech icon={<FaAws />} text="AWS" />
+        <IconTech icon={<SiArduino />} text="Arduino" />
         {/* <Button text="MySQL" icon={<GrMysql />} url="https://www.mysql.com/" /> */}
       </div>
       {/* <br />

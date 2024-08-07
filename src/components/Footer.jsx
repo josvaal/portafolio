@@ -41,11 +41,11 @@ function Footer() {
       <div
         className="flex justify-center text-sm mt-2 opacity-50 hover:text-red-400 transition-all hover:cursor-pointer"
         onClick={() => {
-          navigator.clipboard.writeText("josvalmtrz@gmail.com");
+          navigator.clipboard.writeText("josval.personal@gmail.com");
           toast.success("Correo copiado!");
         }}
       >
-        josvalmtrz@gmail.com
+        josval.personal@gmail.com
       </div>
       <div className="grid grid-cols-1 gap-3 md:gap-0 md:flex md:justify-between opacity-20 mt-10">
         <p className="flex justify-center">
@@ -61,7 +61,7 @@ function Footer() {
           >
             Sobre mí
           </a> */}
-          <a className="hover:underline" href="mailto:josvalmtrz@gmail.com">
+          <a className="hover:underline" href="mailto:josval.personal@gmail.com">
             Contacto
           </a>
         </div>

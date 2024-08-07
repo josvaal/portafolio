@@ -20,17 +20,24 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 gap-16 md:gap-10">
         <Project
-          title="Traductor de idiomas"
-          img="https://camo.githubusercontent.com/321ef441c3ffdc635279b951384e7c3de970051b9525f2a278c0c095c0bc140f/68747470733a2f2f692e696d6775722e636f6d2f69796958356c422e6a7067"
-          description="Traductor de Idiomas en JavaScript con jQuery y API: Traduce texto fácilmente entre idiomas mediante una interfaz eficiente."
-          badges={["javascript"]}
-          code="https://github.com/josvaal/js-translator"
-          preview="https://josvaal.github/js-translator/"
+          title="Sistema De Gestión Académica IoT"
+          img="https://raw.githubusercontent.com/josvaal/iot-academic-management/main/assets/preview.png"
+          description="El Sistema de Gestión de Espacios Académicos optimiza la administración de espacios universitarios con monitorización en tiempo real, control de acceso y programación de horarios"
+          badges={["arduino", "flutter", "firebase"]}
+          code="https://github.com/josvaal/iot-academic-management.git"
         />
         <Project
-          title="Color extractor"
+          title="Traductor de Idiomas"
+          img="https://raw.githubusercontent.com/josvaal/js-translator/main/assets/preview.png"
+          description="La herramienta de traducción de idiomas permite convertir texto entre diferentes idiomas de manera eficiente y versátil."
+          badges={["javascript", "jquery", "apis"]}
+          code="https://github.com/josvaal/js-translator.git"
+          preview="https://josvaal.github.io/js-translator/"
+        />
+        <Project
+          title="Generador De Colores"
           img="https://raw.githubusercontent.com/josvaal/color-extractor/main/images/screenshot.png"
-          description="Extractor de Colores en ReactJS: Sube imágenes, obtén una paleta de colores automáticamente. Interfaz intuitiva para explorar y utilizar en proyectos creativos."
+          description="La herramienta permite cargar imágenes y extraer automáticamente una paleta de colores, facilitando la inspiración cromática y el diseño creativo a través de una interfaz intuitiva."
           badges={["react", "tailwind"]}
           code="https://github.com/josvaal/color-extractor"
           preview="https://color-extractor-one.vercel.app/"
@@ -38,9 +45,9 @@ const Projects = () => {
         <Project
           title="MarkDown a HTML"
           img="https://raw.githubusercontent.com/josvaal/markdown-a-html/master/public/preview1.png"
-          description="Convertidor de Markdown a HTML en React y Material-UI: Interfaz simple para transformar fácilmente documentos Markdown a HTML."
+          description="La herramienta convierte documentos Markdown a HTML de manera fácil y rápida, proporcionando una interfaz simple para una conversión sin complicaciones y mejorando la visualización en plataformas web."
           badges={["react", "mui"]}
-          code="https://github.com/josvaal/markdown-a-html"
+          code="https://github.com/josvaal/markdown-a-html.git"
           preview="https://mdtohtml-bice.vercel.app/"
         />
       </div>

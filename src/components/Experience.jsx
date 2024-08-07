@@ -1,5 +1,5 @@
 // eslint-disable-next-line react/prop-types
-const Experience = ({ job, company, company_link, date, description }) => {
+const Experience = ({ job, company, company_link, date, descriptions }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-7">
       <div className="md:col-span-3 pb-5">
@@ -11,13 +11,17 @@ const Experience = ({ job, company, company_link, date, description }) => {
             target="_blank"
             rel="noreferrer"
           >
-            @{company}
+            {company}
           </a>
         </div>
         <p className="text-sm">{date}</p>
       </div>
       <div className="md:col-span-4">
-        <p className="text-balance">{description}</p>
+        <ul>
+          {descriptions.map((description, i) => (
+            <li key={i}>{description}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
