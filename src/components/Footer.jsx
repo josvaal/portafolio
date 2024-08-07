@@ -30,7 +30,7 @@ function Footer() {
           <FaLinkedin size={30} />
         </a>
         <a
-          href="https://github.com/heyy-josval/"
+          href="https://github.com/josvaal/"
           className="hover:text-red-400 transition-all"
           target="_blank"
           rel="noreferrer"
