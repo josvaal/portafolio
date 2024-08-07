@@ -24,7 +24,7 @@ import { RiFlutterFill } from "react-icons/ri";
 
 const Home = () => {
   return (
-    <div className="text-justify">
+    <div>
       <h1 className="font-bold text-3xl pb-4 text-balance ">
         Hola, soy Josval 👋
       </h1>
