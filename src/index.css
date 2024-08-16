@@ -10,6 +10,86 @@
   @apply visible z-50;
 }
 
+@keyframes bg-animation {
+  0% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 0% 0%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 79% 32%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 51% 81%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  15% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 25% 5%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 60% 40%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 43% 78%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  30% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 50% 10%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 49% 72%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 35% 75%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  50% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 80% 20%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 19% 92%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 21% 71%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  65% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 40% 10%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 47% 52%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 35% 75%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  80% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 20% 5%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 60% 39%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 43% 78%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+  100% {
+    background-image: radial-gradient(
+        at 100% 100%,
+        hsla(0, 100%, 50%, 0.1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 0% 0%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
+      radial-gradient(at 79% 32%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
+      radial-gradient(at 51% 81%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+    transition: 0.3s all;
+  }
+}
+
 .bg-custom-gradient {
   background-color: hsla(0, 13%, 11%, 1);
   background-image: radial-gradient(
@@ -20,5 +100,41 @@
     radial-gradient(at 0% 0%, hsla(0, 100%, 50%, 0.1) 0px, transparent 50%),
     radial-gradient(at 79% 32%, hsla(0, 13%, 11%, 1) 0px, transparent 50%),
     radial-gradient(at 51% 81%, hsla(0, 13%, 11%, 1) 0px, transparent 50%);
+  animation: bg-animation 20s infinite;
+  transition: 0.3s ease;
 }
-ul li:before{ content:"•"; position:relative; left:-5px; font-weight: bold;} ul li{ text-indent:-5px; margin: 10px 0;}
+
+#interactive {
+  position: absolute;
+  background: radial-gradient(
+      circle at center,
+      hsla(0, 100%, 50%, 0.2) 0,
+      rgba(32, 24, 24, 0) 50%
+    )
+    no-repeat;
+  mix-blend-mode: hard-light;
+  width: 100%;
+  height: 100%;
+  top: -50%;
+  left: -50%;
+  opacity: 0.6;
+  pointer-events: none; /* Asegura que no interfiera con otros elementos */
+  border-radius: 50%; /* Para hacer que el efecto sea circular */
+}
+
+@media (max-width: 768px) {
+  #interactive {
+    display: none;
+  }
+}
+
+ul li:before {
+  content: "•";
+  position: relative;
+  left: -5px;
+  font-weight: bold;
+}
+ul li {
+  text-indent: -5px;
+  margin: 10px 0;
+}

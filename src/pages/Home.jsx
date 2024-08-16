@@ -1,4 +1,5 @@
-import { FaLinux, FaReact } from "react-icons/fa";
+/* eslint-disable react/no-unescaped-entities */
+import { FaReact } from "react-icons/fa";
 import {
   FaAws,
   FaBootstrap,
@@ -24,11 +25,11 @@ import { RiFlutterFill } from "react-icons/ri";
 
 const Home = () => {
   return (
-    <div>
-      <h1 className="font-bold text-3xl pb-4 text-balance ">
+    <div className="z-50">
+      <h1 className="font-bold text-3xl pb-4 text-balance z-50">
         Hola, soy Josval 👋
       </h1>
-      <p className="text-pretty text-lg">
+      <p className="text-pretty text-lg z-50">
         +2 años de experiencia.{" "}
         <span className="font-bold text-red-200">
           Desarrollador Full Stack{" "}
@@ -47,9 +48,9 @@ const Home = () => {
       <div className="grid gap-4 grid-cols-6 md:grid-cols-12">
         <IconTech icon={<BiLogoJavascript />} text="JavaScript" />
         <IconTech icon={<BiLogoTypescript />} text="TypeScript" />
+        <IconTech icon={<FaJava />} text="Java" />
         <IconTech icon={<SiDart />} text="Dart" />
         <IconTech icon={<FaGolang />} text="Go" />
-        <IconTech icon={<FaJava />} text="Java" />
         <IconTech icon={<TbBrandCpp />} text="C++" />
         <IconTech icon={<TbSql />} text="SQL" />
         <IconTech icon={<TbBrandSvelte />} text="SvelteKit" />

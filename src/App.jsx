@@ -14,16 +14,19 @@ const App = () => {
   const [location, setLocation] = useLocation();
   console.log(location);
   return (
-    <div className="max-w-[45rem] m-auto px-6 bg-animated">
+    <div className="max-w-[45rem] m-auto px-6 bg-animated ">
       {/* <nav>
         <Navbar />
       </nav> */}
-      <main>
-        <br /><br />
+      <main className="z-50">
+        <br />
+        <br />
         <Home />
-        <br /><br />
+        <br />
+        <br />
         <Projects />
-        <br /><br />
+        <br />
+        <br />
         <Experiences />
         <Router base="">
           <Switch>
@@ -49,7 +52,8 @@ const App = () => {
       </main>
       <Footer />
 
-      <br /><br />
+      <br />
+      <br />
     </div>
   );
 };

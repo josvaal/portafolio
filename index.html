@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Portafolio de Josval - Desarrollador de Software y Programador
-    </title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    Portafolio de Josval - Desarrollador de Software y Programador
+  </title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="https://cdn.jsdelivr.net/npm/grained@0.0.2/grained.min.js"></script>
+  <script>
+    var options = {
+      animate: true,
+      patternWidth: 200,
+      patternHeight: 200,
+      grainOpacity: 0.027,
+      grainDensity: 1,
+      grainWidth: 1.75,
+      grainHeight: 1.75
+    };
+    grained("#root", options)
+  </script>
+</body>
+
 </html>

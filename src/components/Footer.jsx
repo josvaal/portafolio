@@ -9,13 +9,13 @@ function Footer() {
       <div className="flex gap-4 justify-center mt-10">
         <a
           href="mailto:josvalmtrz@gmail.com"
-          className="hover:text-red-400 transition-all"
+          className="hover:text-red-400 transition-all z-50"
         >
           <IoMdMail size={30} />
         </a>
         <a
           href="https://www.youtube.com/channel/UCM-COMfvjuqxmQaoAlRtXNA"
-          className="hover:text-red-400 transition-all"
+          className="hover:text-red-400 transition-all z-50"
           target="_blank"
           rel="noreferrer"
         >
@@ -23,7 +23,7 @@ function Footer() {
         </a>
         <a
           href="https://www.linkedin.com/in/josval/"
-          className="hover:text-red-400 transition-all"
+          className="hover:text-red-400 transition-all z-50"
           target="_blank"
           rel="noreferrer"
         >
@@ -31,7 +31,7 @@ function Footer() {
         </a>
         <a
           href="https://github.com/josvaal/"
-          className="hover:text-red-400 transition-all"
+          className="hover:text-red-400 transition-all z-50"
           target="_blank"
           rel="noreferrer"
         >
@@ -61,7 +61,10 @@ function Footer() {
           >
             Sobre mí
           </a> */}
-          <a className="hover:underline" href="mailto:josval.personal@gmail.com">
+          <a
+            className="hover:underline"
+            href="mailto:josval.personal@gmail.com"
+          >
             Contacto
           </a>
         </div>

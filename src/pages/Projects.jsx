@@ -10,7 +10,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div>
+    <div className="z-50">
       <h1 className="font-bold text-3xl pb-4 text-balance">
         Proyectos destacables 💻
       </h1>
@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="w-full grid place-items-center">
         {loaded ? null : <Loader />}
       </div>
-      <div className="grid grid-cols-1 gap-16 md:gap-10">
+      <div className="grid grid-cols-1 gap-16 md:gap-10 z-50">
         <Project
           title="Sistema De Gestión Académica IoT"
           img="https://raw.githubusercontent.com/josvaal/iot-academic-management/main/assets/preview.png"

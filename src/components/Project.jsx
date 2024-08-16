@@ -5,7 +5,7 @@ import { FaGithub, FaLink } from "react-icons/fa";
 // eslint-disable-next-line react/prop-types
 const Project = ({ title, img, badges, description, code, preview }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 z-50">
       <div className="flex items-center">
         <img
           src={img}
