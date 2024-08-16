@@ -144,12 +144,6 @@ button {
   border-radius: 50%; /* Para hacer que el efecto sea circular */
 }
 
-@media (max-width: 768px) {
-  #interactive {
-    display: none;
-  }
-}
-
 ul li:before {
   content: "•";
   position: relative;

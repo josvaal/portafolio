@@ -45,7 +45,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       className="bg-dark min-h-screen w-full text-white z-10 py-16 bg-custom-gradient"
       id="wrapper"
     >
-      <InteractiveComponent />
+      <div className="lg:block hidden">
+        <InteractiveComponent />
+      </div>
       <App />
     </div>
   </React.StrictMode>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 import { FaReact } from "react-icons/fa";
 import {
@@ -23,26 +24,28 @@ import { TbBrandCpp, TbBrandSvelte, TbSql } from "react-icons/tb";
 import { RiFlutterFill } from "react-icons/ri";
 // import { TbWorldWww } from "react-icons/tb";
 
-const Home = () => {
+const Home = ({ isEnglish }) => {
   return (
     <div className="z-50">
       <h1 className="font-bold text-3xl pb-4 text-balance z-50">
-        Hola, soy josval 👋👨🏻‍💻
+        {isEnglish ? "Hi, i'm Josval 👋👨🏻‍💻" : "Hola, soy Josval 👋👨🏻‍💻"}
       </h1>
       <p className="text-pretty text-lg z-50">
-        +2 años de experiencia.{" "}
+        {isEnglish ? "+2 years of experience " : "+2 años de experiencia "}
         <span className="font-bold text-red-200">
-          Desarrollador Full Stack{" "}
+          {isEnglish ? "Full Stack Developer " : "Desarrollador Full Stack "}
         </span>
-        de Madre de Dios, Perú 🇵🇪. Apasionado por la tecnología y el Open
-        Source. Me enfoco en crear soluciones eficientes y prácticas, con un
-        interés particular en optimizar procesos y mejorar la experiencia del
-        usuario. Mi lema,{" "}
+        {isEnglish
+          ? "from Madre de Dios, Peru 🇵🇪. Passionate about technology and Open Source. I focus on creating efficient and practical solutions, with a particular interest in optimizing processes and improving the user experience. My motto, "
+          : "de Madre de Dios, Perú 🇵🇪. Apasionado por la tecnología y el Open Source. Me enfoco en crear soluciones eficientes y prácticas, con un interés particular en optimizar procesos y mejorar la experiencia del usuario. Mi lema, "}
         <span className="font-bold text-red-200">
-          "Talk is cheap. Show me the code"{" "}
+          {isEnglish
+            ? "“Talk is cheap. Show me the code” "
+            : "“Hablar es barato. Muéstrame el código” "}
         </span>
-        de Linus Torvalds, refleja mi dedicación a la calidad del código y a
-        resultados tangibles
+        {isEnglish
+          ? "of Linus Torvalds, reflects my dedication to code quality and tangible results."
+          : "de Linus Torvalds, refleja mi dedicación a la calidad del código y a resultados tangibles."}
       </p>
       <br />
       <div className="grid gap-4 grid-cols-6 md:grid-cols-12">
