@@ -27,7 +27,7 @@ const Home = () => {
   return (
     <div className="z-50">
       <h1 className="font-bold text-3xl pb-4 text-balance z-50">
-        Hola, soy Josval 👋
+        Hola, soy josval 👋👨🏻‍💻
       </h1>
       <p className="text-pretty text-lg z-50">
         +2 años de experiencia.{" "}

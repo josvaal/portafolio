@@ -2,7 +2,7 @@
 // eslint-disable-next-line react/prop-types
 const Experience = ({ job, company, company_link, date, descriptions }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-7 z-50">
+    <div className="grid grid-cols-1 md:grid-cols-7 z-50 gap-10">
       <div className="md:col-span-3 pb-5">
         <h1 className="text-xl font-bold text-balance text-red-400">{job}</h1>
         <div className="pb-1">

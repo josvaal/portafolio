@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div className="z-50">
       <h1 className="font-bold text-3xl pb-4 text-balance">
-        Proyectos destacables 💻
+        Proyectos destacables 🚀
       </h1>
       <br />
       <div className="w-full grid place-items-center">

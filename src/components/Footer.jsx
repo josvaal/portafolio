@@ -62,7 +62,7 @@ function Footer() {
             Sobre mí
           </a> */}
           <a
-            className="hover:underline"
+            className="hover:underline font-normal"
             href="mailto:josval.personal@gmail.com"
           >
             Contacto
