@@ -77,10 +77,10 @@ const App = () => {
         <Home isEnglish={isLanguage} />
         <br />
         <br />
-        <Projects isEnglish={isLanguage} />
-        <br />
-        <br />
         <Experiences isEnglish={isLanguage} />
+        <br />
+        <br />
+        <Projects isEnglish={isLanguage} />
         <Router base="">
           <Switch>
             {/* <Route path="/" component={Home} />
