@@ -1,7 +1,7 @@
 import { SiArduino, SiFirebase, SiJquery, SiTailwindcss } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaJava } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMui } from "react-icons/si";
+import { SiMui, SiApachemaven } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { TbApi } from "react-icons/tb";
 
@@ -53,6 +53,16 @@ const Badge = ({ type }) => {
         <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#00142e] ">
           <SiMui color="#0071ff" />
           <p>Material UI</p>
+        </div>
+      ) : type == "java" ? (
+        <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#3d090b] ">
+          <FaJava color="#f79b24" />
+          <p>Java</p>
+        </div>
+      ) : type == "maven" ? (
+        <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#260322] ">
+          <SiApachemaven color="#ea9135" />
+          <p>Maven</p>
         </div>
       ) : null}
     </>
