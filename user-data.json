@@ -1,0 +1,80 @@
+{
+  "name": "Josval",
+  "initialYear": 2022,
+  "role": "Full-Stack Developer",
+  "country": "Peru",
+  "description": "Passionate about technology and Open Source. I focus on creating efficient and practical solutions, with a particular interest in optimizing processes and improving the user experience.",
+  "motto": "Talk is cheap. Show me the code.",
+  "mottoAuthor": "Linus Torvalds",
+  "mottoReflect": "reflects my dedication to code quality and tangible results.",
+  "experience": [
+    {
+      "role": "Systems Analyst",
+      "company": "Aukde",
+      "companyLink": "https://aukde.com/",
+      "date": "07/2024 - 08/2024",
+      "descriptions": [
+        "Analyzed multiple systems to develop comprehensive documentation and workflow diagrams.",
+        "Created and maintained README.md files on GitHub for clear project documentation and guidelines."
+      ]
+    },
+    {
+      "role": "Flutter & IoT Developer",
+      "company": "National Amazonian University of Madre de Dios.",
+      "companyLink": "#",
+      "date": "05/2024 - 07/2024",
+      "descriptions": [
+        "Developed an application in Flutter for the management of laboratories and university classrooms as a project for an IoT course.",
+        "Integrated Firebase Realtime Database and Authentication for data handling and secure access, with a reservation system and PIN-based door unlocking."
+      ]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "National Amazonian University of Madre de Dios.",
+      "companyLink": "#",
+      "date": "10/2023 - 11/2023",
+      "descriptions": [
+        "Designed and developed the presentation page for the National Congress of Computer Science and Technologies in the Amazon (CONCETTA).",
+        "Implemented a responsive interface, ensuring compatibility with multiple devices"
+      ]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Aukde",
+      "companyLink": "https://aukde.com/",
+      "date": "04/2022 - 05/2023",
+      "descriptions": [
+        "Developed interactive websites with React and Tailwind CSS, creating reusable components and modern, adaptive interfaces.",
+        "Connected the frontend with external APIs and participated in planning meetings to enhance functionality and coordinate requirements."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Smart Campus IoT & Flutter",
+      "description": "The language translation tool allows you to convert text between different languages in an efficient and versatile way.",
+      "badges": ["flutter", "arduino", "firebase"],
+      "repository": "https://github.com/josvaal/iot-academic-management.git"
+    },
+    {
+      "title": "Portfolio",
+      "description": "A responsive personal portfolio built with React and TailwindCSS. what you're viewing right now!",
+      "badges": ["react", "tailwind"],
+      "repository": "https://github.com/josvaal/portafolio",
+      "preview": "https://josval.xyz/"
+    },
+    {
+      "title": "Task Tracker CLI",
+      "description": "A Java CLI app using PicoCLI for managing tasks; add, list, update, delete, and track progress.",
+      "badges": ["java", "maven"],
+      "repository": "https://github.com/josvaal/task-tracker-cli"
+    },
+    {
+      "title": "MarkDown to HTML",
+      "description": "Effortlessly converts Markdown to HTML, offering a user-friendly interface for smooth and efficient web display.",
+      "badges": ["react", "mui"],
+      "repository": "https://github.com/josvaal/markdown-a-html.git",
+      "preview": "https://mdtohtml-bice.vercel.app/"
+    }
+  ]
+}
