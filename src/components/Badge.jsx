@@ -12,7 +12,7 @@ const Badge = ({ type }) => {
       {type == "tailwind" ? (
         <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#003159]">
           <SiTailwindcss color="#00bcff" />
-          <p>Tailwind CSS</p>
+          <p>Tailwind</p>
         </div>
       ) : type == "react" ? (
         <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#10012a]">
@@ -52,7 +52,7 @@ const Badge = ({ type }) => {
       ) : type == "mui" ? (
         <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#00142e] ">
           <SiMui color="#0071ff" />
-          <p>Material UI</p>
+          <p>MUI</p>
         </div>
       ) : type == "java" ? (
         <div className="px-2 py-1 rounded-3xl text-sm font-light flex gap-2 items-center justify-center bg-[#3d090b] ">

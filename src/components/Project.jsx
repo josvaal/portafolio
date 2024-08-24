@@ -8,7 +8,7 @@ const Project = ({ title, img, badges, description, code, preview }) => {
     <div className="gap-5 z-50 bg-black bg-opacity-15 rounded-xl p-10">
       <div>
         <h1 className="text-xl font-bold pb-2">{title}</h1>
-        <div className="flex pb-2 gap-2">
+        <div className=" pb-2 gap-2 grid grid-cols-2 md:grid-cols-3">
           {/* eslint-disable-next-line react/prop-types */}
           {badges.map((badge, i) => (
             <Badge key={i} type={badge} />

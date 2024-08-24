@@ -79,7 +79,7 @@ const Home = () => {
           <IconTech icon={<RiFlutterFill />} text="Flutter" />
         </SwiperSlide>
         <SwiperSlide>
-          <IconTech icon={<SiTailwindcss />} text="TailwindCSS" />
+          <IconTech icon={<SiTailwindcss />} text="Tailwind" />
         </SwiperSlide>
         <SwiperSlide>
           <IconTech icon={<FaBootstrap />} text="Bootstrap" />
