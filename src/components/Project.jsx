@@ -5,14 +5,7 @@ import { FaGithub, FaLink } from "react-icons/fa";
 // eslint-disable-next-line react/prop-types
 const Project = ({ title, img, badges, description, code, preview }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 z-50">
-      <div className="flex items-center">
-        <img
-          src={img}
-          alt=""
-          className="min-h-56 max-h-56 w-full object-cover rounded-xl"
-        />
-      </div>
+    <div className="gap-5 z-50 bg-black bg-opacity-15 rounded-xl p-10">
       <div>
         <h1 className="text-xl font-bold pb-2">{title}</h1>
         <div className="flex pb-2 gap-2">
@@ -23,7 +16,7 @@ const Project = ({ title, img, badges, description, code, preview }) => {
         </div>
         <p className="pb-4">{description}</p>
         <div className="flex gap-4">
-          {code ? <Button icon={<FaGithub />} text="Code" url={code} /> : null}
+          {code ? <Button icon={<FaGithub />} text="Repo" url={code} /> : null}
           {preview ? (
             <Button icon={<FaLink />} text="Preview" url={preview} />
           ) : null}
