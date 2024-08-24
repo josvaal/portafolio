@@ -33,3 +33,14 @@
     transform: translateX(50px);
   }
 }
+
+/* Asegúrate de que el contenedor del carrusel no tenga overflow */
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* Oculta el desbordamiento */
+}
+
+.swiper-wrapper {
+  display: flex;
+}
