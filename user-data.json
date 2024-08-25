@@ -52,7 +52,7 @@
   "projects": [
     {
       "title": "Smart Campus IoT & Flutter",
-      "description": "The language translation tool allows you to convert text between different languages in an efficient and versatile way.",
+      "description": "Academic Space Management System uses IoT technology based on ESP32 and a mobile application developed with Flutter to intelligently manage spaces in a university.",
       "badges": ["flutter", "arduino", "firebase"],
       "repository": "https://github.com/josvaal/iot-academic-management.git"
     },
